@@ -1,0 +1,26 @@
+{
+  "name": "design-patterns",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "This repository contains examples and explanations of various design patterns. Design patterns are categorized into three types:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikiPP/design-patterns.git"
+  },
+  "keywords": [
+    "design-patterns"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikiPP/design-patterns/issues"
+  },
+  "homepage": "https://github.com/mikiPP/design-patterns#readme",
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  }
+}

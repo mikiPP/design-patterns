@@ -53,3 +53,7 @@ This repository was created using information and examples from the following so
 
 - [Refactoring Guru](https://refactoring.guru/)
 - [DevTalles-corp/patrones-diseno](https://github.com/DevTalles-corp/patrones-diseno)
+
+## To run the code
+
+First install dependecies with npm install, then run `npx tsx [file-route]` for example: `npx tsx creational/builder/builder.ts`
