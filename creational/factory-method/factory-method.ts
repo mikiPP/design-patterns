@@ -72,7 +72,6 @@ export function main() {
     `¿Which type of report do you need? (${reportTypes.join('/')}): `,
   );
 
-  console.log(reportType, 'REPORT TYPE');
   switch (reportType?.toLowerCase()) {
     case SALES:
       reportFactory = new SalesReportFactory();
