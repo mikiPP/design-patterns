@@ -17,7 +17,7 @@
     .limit(10)
     .execute();
 
-  console.log('Consulta: ', usersQuery);
+  console.log('query: ', usersQuery);
   // Select id, name, email from users where age > 18 and country = 'Cri' order by name ASC limit 10;
  */
 
@@ -25,9 +25,9 @@ type QUERY_TYPE = 'SELECT' | 'UPDATE' | 'DELETE';
 type DIRECTION = 'ASC' | 'DESC';
 type CONDITION_TYPE = 'AND' | 'OR';
 
-class QueryBuilder {
+export class QueryBuilder {
   private table: string;
-  private queryType: QUERY_TYPE = 'SELECT';
+  private type: QUERY_TYPE = 'SELECT';
   private fields: string[] = [];
   private conditions: string[] = [];
   private orderFields: string[] = [];
@@ -36,6 +36,11 @@ class QueryBuilder {
 
   constructor(table: string) {
     this.table = table;
+  }
+
+  queryType(type: QUERY_TYPE): QueryBuilder {
+    this.type = type;
+    return this;
   }
 
   select(...fields: string[]): QueryBuilder {
@@ -57,7 +62,7 @@ class QueryBuilder {
     return this;
   }
 
-  orderBy(field: string, direction: 'ASC' | 'DESC' = 'ASC'): QueryBuilder {
+  orderBy(field: string, direction: DIRECTION = 'ASC'): QueryBuilder {
     this.orderFields.push(`${field} ${direction}`);
     return this;
   }
@@ -69,13 +74,13 @@ class QueryBuilder {
 
   toString() {
     const select = this.fields.length ? this.fields.join(this.COMA_SEPARATOR) : '*';
-    const where = this.conditions.length ? `WHERE ${this.conditions.join('')}` : '';
+    const where = this.conditions.length ? ` WHERE ${this.conditions.join('').trim()}` : '';
     const orderBy = this.orderFields.length
-      ? `ORDER BY ${this.orderFields.join(this.COMA_SEPARATOR)}`
+      ? ` ORDER BY ${this.orderFields.join(this.COMA_SEPARATOR)}`
       : '';
-    const limit = this.limitCount ? `LIMIT ${this.limitCount}` : '';
+    const limit = this.limitCount ? ` LIMIT ${this.limitCount}` : '';
 
-    return `${this.queryType} ${select} FROM ${this.table} ${where}  ${orderBy} ${limit}`;
+    return `${this.type} ${select} FROM ${this.table}${where}${orderBy}${limit}`;
   }
 
   execute(): string {
@@ -92,7 +97,7 @@ function main() {
     .limit(10)
     .execute();
 
-  console.log('consulta:\n');
+  console.log('query:\n');
   console.log(usersQuery);
 }
 
