@@ -6,4 +6,4 @@ The pattern allows us to produce different types and representations of an objec
 
 It is useful when we need to construct a complex object with many parts and we want the construction process to be independent of the parts that compose it.
 
-[Do you want to know more?](https://refactoring.guru/design-patterns/builder)
+For more information, visit [Refactoring Guru](https://refactoring.guru/design-patterns/builder)
