@@ -1,4 +1,4 @@
-# Factory Method
+## Factory Method
 
 The Factory Method pattern allows creating objects without specifying the exact class of the object that will be created.
 
