@@ -15,7 +15,7 @@ class StripeService {
 }
 
 export class PayPalAdapter implements PaymentProcessor {
-  paypalService = new PayPalService();
+  private paypalService = new PayPalService();
 
   processPayment(amount: number): void {
     this.paypalService.sendPayment(amount);
@@ -23,7 +23,7 @@ export class PayPalAdapter implements PaymentProcessor {
 }
 
 export class StripeAdapter implements PaymentProcessor {
-  stripeService = new StripeService();
+  private stripeService = new StripeService();
 
   processPayment(amount: number): void {
     this.stripeService.makeCharge(amount);
@@ -31,7 +31,7 @@ export class StripeAdapter implements PaymentProcessor {
 }
 
 export class PaymentProccesorAdapter implements PaymentProcessor {
-  protected service: PaymentProcessor;
+  private service: PaymentProcessor;
 
   constructor(service: PaymentProcessor) {
     this.service = service;
