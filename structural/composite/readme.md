@@ -6,4 +6,4 @@ The pattern allows clients to treat individual objects and their compositions un
 
 It is useful when you need to treat individual objects and their compositions uniformly, and the structure of the objects forms a tree hierarchy.
 
-For more information, visit [Refactoring Guru] https://refactoring.guru/es/design-patterns/composite
+For more information, visit [Refactoring Guru] https://refactoring.guru/design-patterns/composite

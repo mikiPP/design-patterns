@@ -4,4 +4,4 @@ It is a behavioral design pattern that allows you to pass requests along a chain
 
 It is useful when you need to process data in different ways, but you don't know in advance what type of processing is needed or in what order, but you do know that processing must occur in a sequence.
 
-For more information, visit [Refactoring Guru](https://refactoring.guru/es/design-patterns/chain-of-responsibility)
+For more information, visit [Refactoring Guru](https://refactoring.guru/design-patterns/chain-of-responsibility)

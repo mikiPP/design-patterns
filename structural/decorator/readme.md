@@ -5,4 +5,4 @@ Do not confuse it with TypeScript decorators which are annotations.
 
 It is useful when you need to add functionalities to objects in a dynamic and flexible way.
 
-For more information, visit [Refactoring Guru] https://refactoring.guru/es/design-patterns/decorator
+For more information, visit [Refactoring Guru] https://refactoring.guru/design-patterns/decorator
