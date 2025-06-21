@@ -5,4 +5,4 @@ Facade defines a higher-level interface that makes the subsystem easier to use.
 
 It is useful when a subsystem is complex or difficult to understand to provide a simplified interface for the client.
 
-For more information, visit [Refactoring Guru] https://refactoring.guru/es/design-patterns/facade
+For more information, visit [Refactoring Guru] https://refactoring.guru/design-patterns/facade

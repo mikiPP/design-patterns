@@ -4,4 +4,4 @@ This pattern is used to control access to an object, meaning an object is create
 
 It is useful when we need to control access to an object, for example, to check if the client has permission to access certain methods or properties.
 
-For more information, visit [Refactoring Guru] https://refactoring.guru/es/design-patterns/proxy
+For more information, visit [Refactoring Guru] https://refactoring.guru/design-patterns/proxy
