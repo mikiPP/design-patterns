@@ -1,14 +1,10 @@
-/\*\*
+## Command
 
-- ! Patrón Command
-- Este patrón encapsula una solicitud como un objeto,
-- lo que le permite parametrizar otros objetos con diferentes solicitudes,
-- encolar solicitudes, o registrar solicitudes, y soporta operaciones que pueden deshacerse.
--
-- Me gustó mucho la explicación de Refactoring Guru
-- https://refactoring.guru/design-patterns/command
--
-- - Es útil cuando se necesita desacoplar el objeto que invoca
-- - la operación del objeto que sabe cómo realizarla.
--
-- \*/
+This pattern encapsulates a request as an object,
+allowing you to parameterize other objects with different requests, queue requests, or log requests, and supports operations that can be undone.
+
+It is useful when you need to decouple the object that invokes
+the operation from the one that knows how to perform it.
+
+For more information, visit [Refactoring Guru](https://refactoring.guru/design-patterns/command)
+s
