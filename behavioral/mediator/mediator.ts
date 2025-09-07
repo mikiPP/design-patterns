@@ -24,13 +24,9 @@ export class ControlTower {
   }
 
   sendMessage(sender: Airplane, message: string): void {
-    const airplanesWithoutSender = this.airplanes.filter(
-      (airplane) => airplane.getId() !== sender.getId(),
-    );
-
-    for (const airplane of airplanesWithoutSender) {
-      airplane.receiveMessage(sender, message);
-    }
+    this.airplanes
+      .filter((airplane) => airplane.getId() !== sender.getId())
+      .forEach((airplane) => airplane.receiveMessage(sender, message));
   }
 
   requestLanding(sender: Airplane): void {

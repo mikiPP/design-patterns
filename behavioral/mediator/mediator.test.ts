@@ -1,10 +1,6 @@
 import { jest } from '@jest/globals';
 import { ControlTower, Airplane } from './mediator';
 
-// Import classes from mediator.ts
-// If using ES modules, you may need to adjust the import path and syntax
-// For this example, we'll assume the classes are exported (add export to classes if needed)
-
 describe('Mediator Pattern - ControlTower & Airplane', () => {
   let controlTower: ControlTower;
   let airplane1: Airplane;
