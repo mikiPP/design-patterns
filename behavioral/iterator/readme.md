@@ -1,4 +1,4 @@
-## Iterator Pattern
+## Iterator
 
 This pattern allows you to traverse the elements of a collection without exposing the internal structure of the collection.
 
